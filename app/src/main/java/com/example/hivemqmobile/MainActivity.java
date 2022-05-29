@@ -85,6 +85,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
         Button btn_disconnect =(Button)findViewById(R.id.disconnect);
 
         btn_disconnect.setOnClickListener(new View.OnClickListener() {
