@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:circular="http://schemas.android.com/apk/res-auto"
+    android:background="@color/GWhite"
+    tools:context=".Temp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/temp"
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/te2" />
+
+            <TextView
+                android:id="@+id/h_temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/temp"
+                android:layout_centerHorizontal="true"
+                android:text="Temperature"
+                android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:id="@+id/m1"
+                android:layout_margin="20dp"
+                android:layout_below="@+id/h_temp"
+                circular:cardCornerRadius="15dp"
+                android:elevation="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white">
+
+                    <ImageView
+                        android:id="@+id/t1"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginVertical="10dp"
+                        android:src="@drawable/te2" />
+
+                    <TextView
+                        android:id="@+id/temp_head1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginHorizontal="55dp"
+                        android:layout_marginVertical="15dp"
+                        android:text="In Celsius"
+                        android:textColor="@color/black"
+                        android:textSize="22dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/thh2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/temp_head1"
+                        android:layout_gravity="left"
+                        android:layout_marginHorizontal="60dp"
+                        android:text="Show room temperature"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/room_cel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/thh2"
+                        android:layout_marginVertical="5dp"
+                        android:layout_toEndOf="@+id/t1"
+                        android:gravity="center"
+                        android:text="70.83"
+                        android:textColor="@color/black"
+                        android:textSize="28dp"
+                        android:textStyle="normal" />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="58dp"
+                        android:layout_below="@+id/thh2"
+                        android:layout_toEndOf="@+id/room_cel"
+                        android:src="@drawable/c" />
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_below="@+id/m1"
+                circular:cardCornerRadius="15dp"
+                android:layout_margin="20dp"
+                android:elevation="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white">
+
+                    <ImageView
+                        android:id="@+id/t2"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginVertical="10dp"
+                        android:src="@drawable/te2" />
+
+                    <TextView
+                        android:id="@+id/temp_head2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginHorizontal="55dp"
+                        android:layout_marginVertical="15dp"
+                        android:text="In Fahrenheit"
+                        android:textColor="@color/black"
+                        android:textSize="22dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/thh3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/temp_head2"
+                        android:layout_gravity="left"
+                        android:layout_marginHorizontal="60dp"
+                        android:text="Show room temperature"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/room_fah"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/thh3"
+                        android:layout_marginVertical="5dp"
+                        android:layout_toEndOf="@+id/t2"
+                        android:gravity="center"
+                        android:text="70.83"
+                        android:textColor="@color/black"
+                        android:textSize="28dp"
+                        android:textStyle="normal" />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="58dp"
+                        android:layout_below="@+id/thh3"
+                        android:layout_toEndOf="@+id/room_fah"
+                        android:src="@drawable/f" />
+
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</FrameLayout>
