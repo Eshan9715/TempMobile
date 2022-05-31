@@ -3,8 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/eshan/Desktop/UOC/EIT Physics/Android projects/HiveMQMobile/app/src/main/res/drawable-v24/thumb.xml" value="0.1775" />
+        <entry key="..\:/Users/eshan/Desktop/UOC/EIT Physics/Android projects/HiveMQMobile/app/src/main/res/drawable-v24/track.xml" value="0.121" />
         <entry key="..\:/Users/eshan/Desktop/UOC/EIT Physics/Android projects/HiveMQMobile/app/src/main/res/layout/activity_home.xml" value="0.264" />
         <entry key="..\:/Users/eshan/Desktop/UOC/EIT Physics/Android projects/HiveMQMobile/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/eshan/Desktop/UOC/EIT Physics/Android projects/HiveMQMobile/app/src/main/res/layout/activity_settings.xml" value="0.264" />
         <entry key="..\:/Users/eshan/Desktop/UOC/EIT Physics/Android projects/HiveMQMobile/app/src/main/res/layout/activity_splash_screen.xml" value="0.25" />
         <entry key="..\:/Users/eshan/Desktop/UOC/EIT Physics/Android projects/HiveMQMobile/app/src/main/res/layout/fragment_l_e_d.xml" value="0.264" />
         <entry key="..\:/Users/eshan/Desktop/UOC/EIT Physics/Android projects/HiveMQMobile/app/src/main/res/layout/fragment_temp.xml" value="0.264" />
