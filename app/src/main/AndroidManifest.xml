@@ -15,6 +15,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Temperature_mqtt">
         <activity
+            android:name=".Settings"
+            android:exported="false" />
+        <activity
             android:name=".SplashScreen"
             android:exported="false" />
         <activity
