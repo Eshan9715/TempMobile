@@ -21,11 +21,12 @@
             android:layout_height="match_parent">
 
             <ImageView
+                android:id="@+id/back_home"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:layout_margin="15dp"
-                android:id="@+id/back_from_flo"
-                android:src="@drawable/ic_baseline_keyboard_arrow_left_24"/>
+                android:layout_centerVertical="true"
+                android:layout_marginHorizontal="10dp"
+                android:src="@drawable/ic_baseline_keyboard_arrow_left_24" />
 
 
             <TextView
@@ -50,7 +51,7 @@
         android:orientation="vertical">
 
         <com.google.android.material.tabs.TabLayout
-            android:id="@+id/tablelayout_flowers"
+            android:id="@+id/tablelayout_iot"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintEnd_toEndOf="parent"
@@ -73,7 +74,7 @@
         </com.google.android.material.tabs.TabLayout>
 
         <androidx.viewpager2.widget.ViewPager2
-            android:id="@+id/viewPager_flowers"
+            android:id="@+id/viewPager_iot"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:layout_constraintTop_toBottomOf="@+id/tablelayout_flowers" />

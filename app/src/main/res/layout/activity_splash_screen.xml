@@ -30,9 +30,9 @@
     <ProgressBar
         style="@android:style/Widget.ProgressBar"
         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/uy"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:layout_height="wrap_content" />
+        android:layout_marginTop="20dp" />
 
 </RelativeLayout>
