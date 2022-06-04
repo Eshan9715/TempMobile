@@ -41,36 +41,36 @@ public class Temp extends Fragment {
             tem = bundle.getString("m0h");
         }
 
-//        int qos = 1;
-//        try{
-//            client.subscribe(tem, qos);
-//        }catch (MqttException e){
-//            e.printStackTrace();
-//        }
-//        client.setCallback(new MqttCallback() {
-//            @Override
-//            public void connectionLost(Throwable cause) {
-//
-//            }
-//            @Override
-//            public void messageArrived(String topic, MqttMessage message) throws Exception {
-//                String msg = new String(message.getPayload());
-//                String setMsg = msg + " C";
-//                temCel.setText(setMsg);
-//                double temp = Double.parseDouble(msg);
-//                double temp_fah = (temp * 1.8) +32;
-//                double roundDbl = Math.round(temp_fah*100.0)/100.0;
-//                String fran = String.valueOf(roundDbl);
-//                temFra.setText(fran + " F");
-//                Toast.makeText(Temp.this.getContext(), "Message received", Toast.LENGTH_SHORT).show();
-//
-//            }
-//
-//            @Override
-//            public void deliveryComplete(IMqttDeliveryToken token) {
-//
-//            }
-//        });
+        int qos = 1;
+        try{
+            client.subscribe(tem, qos);
+        }catch (MqttException e){
+            e.printStackTrace();
+        }
+        client.setCallback(new MqttCallback() {
+            @Override
+            public void connectionLost(Throwable cause) {
+
+            }
+            @Override
+            public void messageArrived(String topic, MqttMessage message) throws Exception {
+                String msg = new String(message.getPayload());
+                String setMsg = msg + " C";
+                temCel.setText(setMsg);
+                double temp = Double.parseDouble(msg);
+                double temp_fah = (temp * 1.8) +32;
+                double roundDbl = Math.round(temp_fah*100.0)/100.0;
+                String fran = String.valueOf(roundDbl);
+                temFra.setText(fran + " F");
+                Toast.makeText(Temp.this.getContext(), "Message received", Toast.LENGTH_SHORT).show();
+
+            }
+
+            @Override
+            public void deliveryComplete(IMqttDeliveryToken token) {
+
+            }
+        });
 
         Glide.with(this).load(R.drawable.temp).into(tempGiff);
 

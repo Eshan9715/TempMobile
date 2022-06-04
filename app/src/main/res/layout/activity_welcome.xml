@@ -19,7 +19,7 @@
             android:layout_height="match_parent"
             android:text="Welcome"
             android:gravity="center"
-            android:background="#150A42"
+            android:background="@color/navy_blue"
             android:textSize="25dp"
             android:textColor="@color/white"/>
 
